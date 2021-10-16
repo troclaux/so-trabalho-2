@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 main(){
   int ret1, ret2;
   ret1 = fork();
