@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main(){
+void main(){
   int ret1, ret2;
   ret1 = fork();
   ret2 = fork();

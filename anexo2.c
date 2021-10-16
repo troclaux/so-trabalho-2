@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-main(){
+void main(){
+
   int ret;
   ret = fork();
   if (ret == 0){
