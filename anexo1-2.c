@@ -7,8 +7,7 @@ void main(){
   ret = fork();
   if (ret == 0){
     execl("/bin/ls","ls", NULL);
-  }
-  else{
+  }else{
     printf("Processo continua executando.\n");
   }
 }

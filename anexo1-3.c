@@ -6,7 +6,7 @@ void main(){
   ret = fork();
 
   if (ret == 0){
-    execl("/bin/ls","ls", 0);
+    execl("/bin/ls","ls", NULL);
     printf("Quando este comando será executado ? \n");
   };
   printf("Por que a função printf anterior não foi executada?\n");
