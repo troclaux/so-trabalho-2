@@ -1,4 +1,4 @@
-Início
+/* Início
   Lê linha de comando;
   Enquanto não fim faça
     Início
@@ -18,4 +18,4 @@ Início
       Lê linha de comando;
     Fim;
 
-Fim;
+Fim; */
