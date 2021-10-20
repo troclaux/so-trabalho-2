@@ -62,7 +62,7 @@ int main(void)
 
     write(mensageiroFilhoParaPai[WRITE], &j, sizeof(j));
 
-    execl("/bin/ls", "ls", NULL);
+    execl("/bin/ls", "ls", "-a",  NULL);
     //O que acontece após este comando ? 
     //O que pode acontecer se o comando "execl" falhar ?
   }
