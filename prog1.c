@@ -14,11 +14,11 @@ int main(void)
   int mensageiroFilhoParaPai[2];
   char *mensagem;
 
-  if(pipe(mensageiroPaiParaFilho) == -1){
+  if(pipe(mensageiroPaiParaFilho) == -1) {
     printf("deu ruim na mensagem do processo pai para o filho");
     return -1;
   }
-  if(pipe(mensageiroFilhoParaPai) == -1){
+  if(pipe(mensageiroFilhoParaPai) == -1) {
     printf("deu ruim na mensagem do processo filho para o pai");
     return -1;
   }
@@ -41,13 +41,13 @@ int main(void)
 
     wait(&status);
 
-    if(status == 0){
+    if(status == 0) {
       printf("O processo filho encerrou \n");
-    }else{
+    } else {
       printf("O processo filho encerrou com falha \n");
     }
     printf("O processo pai encerrou\n");
-  }else if(ret == 0){
+  } else if(ret == 0) {
     close(mensageiroPaiParaFilho[WRITE]);
     close(mensageiroFilhoParaPai[READ]);    
 
